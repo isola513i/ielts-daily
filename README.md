@@ -52,7 +52,7 @@ Unit tests ตรวจคิวฝึก ข้อมูลคำศัพท�
 
 ## เผยแพร่
 
-GitHub Actions ตรวจ tests ก่อนอัปโหลด `web/` และเผยแพร่ผ่าน GitHub Pages จาก branch `main` ใช้โดเมน `github.io` และ repository สาธารณะตามแผนที่เลือก ไม่มี custom domain หรือบริการ Backend
+GitHub Actions ตรวจ tests ก่อนอัปโหลด `web/` และเผยแพร่ผ่าน GitHub Pages เมื่อไฟล์เว็บ ระบบทดสอบ หรือ workflow ใน branch `main` เปลี่ยน ส่วนการแก้เอกสารอย่างเดียวไม่ทำให้ deploy ซ้ำ ใช้โดเมน `github.io` และ repository สาธารณะตามแผนที่เลือก ไม่มี custom domain หรือบริการ Backend
 
 เนื้อหาคำศัพท์และประโยคตัวอย่างเขียนขึ้นสำหรับโครงการนี้ ไม่ใช่ชุดข้อสอบทางการ และจำนวนคำที่จำได้ไม่ใช่การคาดการณ์คะแนน IELTS
 

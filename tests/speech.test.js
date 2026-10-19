@@ -40,3 +40,17 @@ test('prefers a conventional speaking voice over an alphabetically earlier novel
   speech.speak('A useful word.', 'en-US');
   assert.equal(e.spoken[0].voice.name, 'Samantha');
 });
+
+test('cancel notifies the interface even when the available voices do not change', () => {
+  const e = engine(); e.setVoices([voice('en-US', 'Samantha')]);
+  const observed = [];
+  const speech = createSpeech(e, class {}, () => observed.push(speech.playing));
+  speech.speak('A useful example.', 'en-US');
+  e.spoken[0].onstart();
+  assert.equal(observed.at(-1), true);
+  speech.cancel(); speech.refresh();
+  assert.equal(speech.playing, false);
+  assert.equal(observed.at(-1), false);
+  e.spoken[0].onend();
+  assert.equal(observed.at(-1), false);
+});

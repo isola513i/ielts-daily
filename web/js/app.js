@@ -42,7 +42,7 @@ function shell(content) {
 function homeView() {
   const remembered = CARDS.filter(c => state.progress[c.id]?.remembered).length;
   const hasRound = Boolean(state.session?.queue.length);
-  return `<div class="page-top"><span class="section-name">สมุดคำศัพท์ของคุณ</span><a class="accent-link" href="#settings">${icon('sound')}<span lang="en">${accent().label}</span>${icon('chevron')}</a></div>
+  return `<div class="page-top home-top"><a class="accent-link" href="#settings">${icon('sound')}<span lang="en">${accent().label}</span>${icon('chevron')}</a></div>
     <div class="home-layout"><div class="home-primary">
       <section class="welcome"><h1 tabindex="-1">เก่งขึ้นทีละคำ<br><span>เริ่มที่วันนี้</span></h1><p>คำศัพท์ที่ใช้ได้จริง สำหรับ IELTS General<br class="desktop-break"> ฝึกสั้น ๆ แล้วค่อย ๆ จำได้มากขึ้น</p>
         <div class="round-meta"><span>${icon('layers')} รอบละ 10 คำ</span><span>${icon('clock')} ประมาณ 3–5 นาที</span></div>

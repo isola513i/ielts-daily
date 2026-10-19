@@ -39,6 +39,7 @@ button svg,a svg{flex-shrink:0}
 .mobile-header,.mobile-nav,.mobile-only{display:none}
 .page-top,.study-top{display:flex;justify-content:space-between;align-items:center;min-height:44px;margin-bottom:42px;gap:12px}
 .section-name{font-size:13px;color:var(--muted)}
+.home-top{justify-content:flex-end}
 .accent-link{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:24px;padding:6px 12px}
 .accent-link:hover{background:var(--teal-soft);color:var(--teal)}
 .accent-link .icon{width:16px;height:16px}

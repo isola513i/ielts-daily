@@ -33,6 +33,7 @@ export function createSpeech(engine, Utterance, onChange = () => {}) {
       if (supported) engine.cancel();
       active = null;
       playing = false;
+      onChange();
     },
     speak(text, locale) {
       api.refresh();

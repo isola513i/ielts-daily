@@ -3,6 +3,13 @@ name: Verify and publish GitHub Pages
 on:
   push:
     branches: [main]
+    paths:
+      - 'web/**'
+      - 'tests/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'playwright.config.js'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
